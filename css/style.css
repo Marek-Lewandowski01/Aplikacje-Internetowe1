@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(to right, #02AAB0, #00CDAC);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+.map-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left-map, .right-map {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+#rasterMap {
+  width: 100%;
+  background-color: white;
+}
+
+#map {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    grid-template-columns: 1fr;
+    min-height: 70vh;
+  }
+}
+
+.puzzle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+#puzzle-board, #puzzle-pieces {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  border: 1px solid black;
+  max-width: 1000px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.puzzle-piece, .puzzle-slot {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  position: relative;
+}
+
+
+.puzzle-piece canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.puzzle-slot {
+  border: 1px dashed #000000;
+}
+
+@media (min-width: 1200px) {
+  #puzzle-board, #puzzle-pieces {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 801px) {
+  #puzzle-board, #puzzle-pieces {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+  #puzzle-board, #puzzle-pieces {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #puzzle-board, #puzzle-pieces {
+    grid-template-columns: 1fr;
+  }
+}
+#completion-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+#completion-overlay h2 {
+  font-size: 36px;
+  margin: 0;
+}

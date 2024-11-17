@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab-C Marek</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+  <script src="leaflet-1.7.1/leaflet-src.js"></script>
+  <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+  <script src="leaflet-1.7.1/leaflet-image.js"></script>
+</head>
+<body>
+<h1>LAB C Marek Lewandowski</h1>
+<div class="map-container">
+  <div class="left-map">
+    <div id="map"></div>
+    <div class="buttons">
+      <button id="getLocationButton">Moja lokalizacja</button>
+      <button id="saveMapButton">Pobierz mapę</button>
+    </div>
+  </div>
+  <canvas id="rasterMap" class="right-map"></canvas>
+</div>
+<div class="puzzle-section">
+  <div id="puzzle-board"></div>
+  <div id="puzzle-pieces"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
