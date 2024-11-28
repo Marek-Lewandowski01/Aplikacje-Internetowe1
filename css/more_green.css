@@ -1,0 +1,339 @@
+/* Globalne ustawienia */
+body {
+  font-family: "Montserrat", serif;
+  background-color: lightyellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: cornsilk;
+  margin: 0;
+}
+
+header {
+  background-color: darkslategrey;
+  color: white;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: cornsilk;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background-image: url("../bg_cooking.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: #1c1c1c;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.hero .button {
+  background-color: darkslategray;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.hero .button:hover {
+  background-color: lightslategray;
+}
+
+/* Sekcja z przepisami */
+#przepisy {
+  padding: 30px;
+  background-color: #fafaf2;
+  text-align: center;
+}
+
+#przepisy h2 {
+  font-size: 2.5rem;
+}
+
+.recipe {
+  /*background-color: white;*/
+  max-width: 60%;
+  padding: 20px;
+  margin: 45px auto;
+  border: 2px solid darkslategray;
+  box-shadow: 10px 5px 5px darkslategray;
+  border-radius: 15px;
+}
+
+.recipe h3 {
+  font-size: 1.8rem;
+  line-height: 5rem;
+  border-bottom: 1px solid darkslategray;
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  font-size: 1.2rem;
+}
+
+.recipe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe ul li {
+  border: 2px solid darkslategray;
+  color: darkolivegreen;
+  font-weight: bold;
+  padding: 8px;
+  margin: 0.5rem 5rem;
+  border-radius: 5px;
+}
+
+.recipe a {
+  display: inline-block;
+  margin-top: 10px;
+  color: lightseagreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe a:hover {
+  text-decoration: underline;
+}
+
+/* Sekcja z poradami */
+#porady {
+  padding: 50px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+#porady h2 {
+  font-size: 2.5rem;
+}
+
+.tip {
+  max-width: 60%;
+  margin: 45px auto;
+  border: 1px solid darkslategray;
+  background-color: lightyellow;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tip h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.tip p {
+  font-size: 1.2rem;
+}
+
+/* Stopka */
+footer {
+  background-color: darkslategray;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+#przepisy p,
+#porady p {
+  font-size: 1.2rem;
+  color: darkslategray;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#przepisy h2,
+#porady h2 {
+  color: darkgreen;
+}
+
+
+/* Responsywność */
+/* średnie ekrany */
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 15px 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 480px;
+  }
+
+  .hero .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Sekcja z przepisami */
+  #przepisy h3{
+    font-size: 1.6rem;
+  }
+
+  #przepisy h2 {
+    font-size: 1.8rem;
+  }
+
+  .recipe {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+
+  /* Sekcja z poradami */
+  #porady h2 {
+    font-size: 1.8rem;
+  }
+
+    .tip {
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+    }
+
+    .tip h3 {
+        font-size: 1.2rem;
+    }
+
+    .tip p {
+        font-size: 1rem;
+    }
+
+    /* Stopka */
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+
+/* małe ekrany */
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 0.7rem;
+  }
+
+  .recipe ul li {
+    margin: 0.5rem 2rem;
+    padding: 5px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 2px;
+  }
+
+  .recipe h3 {
+    line-height:2rem;
+  }
+
+  /*nav ul li a {*/
+  /*  font-size: 0.7rem;*/
+  /*}*/
+}
+
+#style-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#style-links a {
+  color: lightskyblue;
+  /*text-decoration: none;*/
+  font-weight: bolder;
+}
+
+#style-links span {
+  font-weight: bold;
+  color: yellow;
+}
